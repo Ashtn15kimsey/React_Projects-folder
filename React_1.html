@@ -8,14 +8,14 @@
 
 </head>
 <body>
-    <div id="MY_React_Code"></div>
+    <div id="My_React_Code"></div>
     <script>
         var counter = React.createClass({
             render: function() {
                 var time_Passed = Math.round(this.props.time_Passed /100);
                 var second_Passed = time_Passed /10 + (time_Passed % 10 ? '':'.0');
                 var text = 'My React code started running' +
-                   seconds_Passed +  'seconds ago!';
+                   second_Passed +  'seconds ago!';
                 return React.DOM.p(null, text);
         }
     });
